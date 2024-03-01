@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlsrv'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,12 +80,12 @@ return [
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'localhost'),
+            'url' => env('AAurelio'),
+            'host' => env('DB_HOST', 'server1'),
             'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'Anywhere'),
+            'username' => env('DB_USERNAME', 'NaysaCon'),
+            'password' => env('DB_PASSWORD', 'P@ssw0rd'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
